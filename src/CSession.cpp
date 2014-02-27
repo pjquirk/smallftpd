@@ -750,7 +750,7 @@ int CSession::type() {
 	// TODO : change transfer TYPE
 	char *a;
 	
-	a = (char*)malloc(lstrlen(TYPE_SET_1)+lstrlen(lastParam)+lstrlen(TYPE_SET_2));
+	a = (char*)malloc(lstrlen(TYPE_SET_1)+lstrlen(lastParam)+lstrlen(TYPE_SET_2)+1);
 	wsprintf(a, "%s%s%s", TYPE_SET_1, lastParam, TYPE_SET_2);
 	sendToClient(a);
 
@@ -1292,7 +1292,7 @@ int CSession::retr() {
     	sendToClient(PORT_CLOSE);
 	}
 
-	wsprintf(msg, "#%d - user %s - download completed - \"%s\"", m_SessionIndex, userLogin, lastParam, size1, size2, ftell(f)*100/low);
+	wsprintf(msg, "#%d - user %s - download completed - \"%s\"", m_SessionIndex, userLogin, lastParam);
 	updateListMsg(msg);
 
 	log(LOG_TRANSFER, "Download completed by %s : %s\r\n", userLogin, inet_ntoa(m_ClientAddr), filePath);
