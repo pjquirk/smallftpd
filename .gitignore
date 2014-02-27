@@ -14,3 +14,11 @@
 
 # Compiled directory
 Debug
+
+# Visual Studio files
+*.sdf
+*.opensdf
+
+# smallftp Generated files
+debug.log
+ftpd.ini
