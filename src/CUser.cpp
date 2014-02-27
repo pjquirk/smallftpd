@@ -366,7 +366,7 @@ bool CUser::hasPermission(char* path_, char* type_) {
     perm[0] = '\0';
 
     char* pathBuf;
-    pathBuf = (char*)malloc(lstrlen(path_));
+    pathBuf = (char*)malloc(lstrlen(path_)+1);
     lstrcpy(pathBuf, path_);
 
     //
