@@ -1829,5 +1829,7 @@ unsigned long __stdcall ActionThread(void* pVoid)
 
     session->m_ActionThreadRunning = false;
     log(LOG_DEBUG, "DEBUG - action thread finished - ActionThread()\r\n");
+
+	return 0;
 }
 
