@@ -1026,8 +1026,8 @@ bool log(short type, char* lpFormat, ...) {
     char szBuf[BUFFER_SIZE];
     va_list Marker;
     SYSTEMTIME systime;
-    char timestr[8];
-    char datestr[10];
+    char timestr[9];
+    char datestr[11];
     char *toWrite;
     unsigned long ul;
 
