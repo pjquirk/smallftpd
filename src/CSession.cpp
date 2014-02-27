@@ -990,9 +990,9 @@ int CSession::list(bool nlst) {
 
             int memNeeded = 0;
             if (nlst) {
-                memNeeded = lstrlen(content)+lstrlen(findData.cFileName)+4;
+                memNeeded = lstrlen(content)+lstrlen(findData.cFileName)+4+1;
             } else {
-                memNeeded = lstrlen(content)+25+15+30+lstrlen(findData.cFileName)+20;
+                memNeeded = lstrlen(content)+25+15+30+lstrlen(findData.cFileName)+20+1;
             }
             // log(LOG_DEBUG, "TEMP - current : strlen=%d bytes \r\n", lstrlen(content));
             // log(LOG_DEBUG, "TEMP - trying to reallocate %d bytes for LIST\r\n", memNeeded);
