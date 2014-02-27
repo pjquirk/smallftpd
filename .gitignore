@@ -19,7 +19,9 @@ Release
 # Visual Studio files
 *.sdf
 *.opensdf
+*.suo
 
 # smallftp Generated files
 debug.log
+transfers.log
 ftpd.ini
