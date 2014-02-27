@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "smallftpd", "smallftpd.vcxproj", "{93861B58-E897-416D-B993-3D57645B58CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93861B58-E897-416D-B993-3D57645B58CE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{93861B58-E897-416D-B993-3D57645B58CE}.Debug|Win32.Build.0 = Debug|Win32
+		{93861B58-E897-416D-B993-3D57645B58CE}.Release|Win32.ActiveCfg = Release|Win32
+		{93861B58-E897-416D-B993-3D57645B58CE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
